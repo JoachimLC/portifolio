@@ -58,6 +58,12 @@ const Contact = () => {
           </motion.a>
         </div>
       </motion.div>
+
+      <div className="contact-message">
+          <p>
+          Bygget med React, Sass, hostet på Netfliy
+          </p>
+        </div>
     </section>
   );
 };
