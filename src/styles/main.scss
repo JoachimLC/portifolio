@@ -160,4 +160,66 @@ a {
 @import 'components/project';
 @import 'components/experience';
 @import 'components/education';
-@import 'components/contact'; 
+@import 'components/contact';
+
+// About Section
+.about-section {
+  background-color: rgba($background, 0.8);
+  padding: $spacing-xl 0;
+
+  .about-content {
+    display: grid;
+    gap: $spacing-lg;
+    margin-top: $spacing-lg;
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .about-text {
+    p {
+      margin-bottom: $spacing-md;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  }
+
+  .skills {
+    h3 {
+      margin-bottom: $spacing-md;
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: $spacing-md;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .skill-category {
+      h4 {
+        color: $primary;
+        margin-bottom: $spacing-sm;
+        font-size: 1.2rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: $spacing-xs;
+          padding-left: $spacing-sm;
+          position: relative;
+
+          &::before {
+            content: "•";
+            color: $primary;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+} 

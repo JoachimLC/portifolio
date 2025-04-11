@@ -6,6 +6,7 @@ const Navbar = ({ isScrolled }) => {
     { name: 'Prosjekt', href: '#project' },
     { name: 'Erfaring', href: '#experience' },
     { name: 'Utdanning', href: '#education' },
+    { name: 'Om Meg', href: '#about' },
     { name: 'Kontakt', href: '#contact' }
   ]
 

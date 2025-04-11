@@ -10,6 +10,7 @@ import Hero from './components/Hero'
 import Project from './components/Project'
 import Experience from './components/Experience'
 import Education from './components/Education'
+import About from './components/About'
 import Contact from './components/Contact'
 
 function App() {
@@ -51,6 +52,12 @@ function App() {
         <section id="education">
           <div className="container">
             <Education />
+          </div>
+        </section>
+
+        <section id="about">
+          <div className="container">
+            <About />
           </div>
         </section>
 
