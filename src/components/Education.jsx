@@ -3,24 +3,24 @@ import { motion } from 'framer-motion'
 const Education = () => {
   const technicalSkills = [
     {
-      category: 'Programming Languages',
+      category: 'Programmeringsspråk',
       skills: ['JavaScript', 'Python', 'Java', 'C++', 'SQL']
     },
     {
-      category: 'Web Development',
-      skills: ['HTML5', 'CSS3', 'React', 'Node.js', 'Express', 'RESTful APIs']
+      category: 'Webutvikling',
+      skills: ['HTML5', 'CSS3', 'React', 'Node.js', 'Express', 'RESTful API-er']
     },
     {
-      category: 'Database Systems',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Database Design']
+      category: 'Databasesystemer',
+      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Database-design']
     },
     {
-      category: 'Development Tools',
+      category: 'Utviklingsverktøy',
       skills: ['Git', 'Docker', 'VS Code', 'Postman', 'Jira']
     },
     {
-      category: 'Problem Solving',
-      skills: ['Algorithms', 'Data Structures', 'System Design', 'Debugging']
+      category: 'Problemløsning',
+      skills: ['Algoritmer', 'Datastrukturer', 'Systemdesign', 'Feilsøking']
     }
   ]
 
@@ -29,23 +29,23 @@ const Education = () => {
       className="education"
       data-aos="fade-up"
     >
-      <h2>Bachelor's in Informatics</h2>
+      <h2>Bachelor i Informatikk</h2>
       
       <div className="education-content">
         <div className="education-overview">
-          <h3>Key Areas of Study</h3>
+          <h3>Hovedstudieområder</h3>
           <ul>
-            <li>Software Engineering and Development</li>
-            <li>Database Systems and Management</li>
-            <li>Web Technologies and Applications</li>
-            <li>System Architecture and Design</li>
-            <li>Data Structures and Algorithms</li>
-            <li>User Interface Design and Experience</li>
+            <li>Programvareutvikling og -design</li>
+            <li>Databasesystemer og -administrasjon</li>
+            <li>Webteknologier og -applikasjoner</li>
+            <li>Systemarkitektur og -design</li>
+            <li>Datastrukturer og algoritmer</li>
+            <li>Brukergrensesnittdesign og -opplevelse</li>
           </ul>
         </div>
 
         <div className="technical-skills">
-          <h3>Technical Competencies</h3>
+          <h3>Tekniske Kompetanser</h3>
           <div className="skills-grid">
             {technicalSkills.map((category) => (
               <motion.div
@@ -66,13 +66,13 @@ const Education = () => {
         </div>
 
         <div className="academic-highlights">
-          <h3>Academic Achievements</h3>
+          <h3>Akademiske Prestasjoner</h3>
           <ul>
-            <li>Graduated with distinction in Software Development</li>
-            <li>Completed advanced coursework in Web Technologies</li>
-            <li>Participated in multiple hackathons and coding competitions</li>
-            <li>Contributed to open-source projects during studies</li>
-            <li>Presented research on modern web development practices</li>
+            <li>Utdannet med utmerkelse i Programvareutvikling</li>
+            <li>Fullførte avanserte kurs i Webteknologier</li>
+            <li>Deltok i flere hackathons og programmeringskonkurranser</li>
+            <li>Bidro til åpen kildekode-prosjekter under studiene</li>
+            <li>Presenterte forskning på moderne webutviklingspraksis</li>
           </ul>
         </div>
       </div>

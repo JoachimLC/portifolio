@@ -16,6 +16,8 @@ body {
   background-color: $background;
   color: $text;
   line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 // Typography
@@ -41,13 +43,30 @@ h3 {
 // Layout
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 $spacing-md;
+  padding: 0 $spacing-xl;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 0 $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing-md;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 $spacing-sm;
+  }
 }
 
 section {
-  padding: $spacing-xl 0;
+  width: 100%;
+  padding: $spacing-lg 0;
+
+  & + section {
+    padding-top: 0;
+  }
 }
 
 // Links

@@ -1,33 +1,93 @@
-.experience {
-  padding: $spacing-xl 0;
-  background-color: rgba($accent, 0.05);
+@import '../variables';
 
-  .experience-content {
-    max-width: 800px;
+.education {
+  padding: $spacing-xl 0;
+
+  h2 {
+    margin-bottom: $spacing-xl;
+  }
+
+  // Header med beskrivelse og sirkulær roterende bildesamling
+  .education-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xl;
+
+    .education-description {
+      flex: 1;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: $text;
+      }
+    }
+
+    .tech-images {
+      position: relative;
+      width: 200px;   // Containerstørrelse for hjulet
+      margin-right: 15%;
+      margin-left: 5%;
+      height: 200px;
+      animation: spinWheel 10s linear infinite; // Roterer hele hjulet
+
+      .tech-image-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;   // Størrelse på hvert bilde
+        height: 40px;
+        margin: -20px; // Sentrerer containeren
+
+        .tech-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          animation: spinWheelReverse 10s linear infinite; // Motrotasjon for å beholde rett orientering
+        }
+      }
+
+      // Plassering av 5 bilder jevnt fordelt langs sirkelens periferi.
+      // Juster "80px" (radius) etter ønske.
+      .tech-image-container:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(0deg) translate(80px) rotate(0deg);
+      }
+      .tech-image-container:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(72deg) translate(80px) rotate(-72deg);
+      }
+      .tech-image-container:nth-child(3) {
+        transform: translate(-50%, -50%) rotate(144deg) translate(80px) rotate(-144deg);
+      }
+      .tech-image-container:nth-child(4) {
+        transform: translate(-50%, -50%) rotate(216deg) translate(80px) rotate(-216deg);
+      }
+      .tech-image-container:nth-child(5) {
+        transform: translate(-50%, -50%) rotate(288deg) translate(80px) rotate(-288deg);
+      }
+    }
+  }
+
+  .education-content {
+    max-width: 1200px;
     margin: 0 auto;
   }
 
-  .experience-details {
+  .education-overview {
+    margin-bottom: $spacing-xl;
+
     h3 {
+      margin-bottom: $spacing-sm;
       color: $accent;
-      margin-bottom: $spacing-xs;
-    }
-
-    .experience-period {
-      color: $text;
-      opacity: 0.8;
-      margin-bottom: $spacing-lg;
-    }
-
-    h4 {
-      color: $primary;
-      margin-top: $spacing-lg;
-      margin-bottom: $spacing-md;
     }
 
     ul {
       list-style-type: none;
-      margin-bottom: $spacing-lg;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
 
       li {
         position: relative;
@@ -43,4 +103,103 @@
       }
     }
   }
-} 
+
+  .technical-skills {
+    margin-bottom: $spacing-xl;
+
+    h3 {
+      margin-bottom: $spacing-sm;
+      color: $accent;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
+    }
+
+    .skill-category {
+      background-color: rgba($accent, 0.05);
+      padding: $spacing-md;
+      border-radius: 8px;
+      transition: transform $transition-fast;
+
+      h4 {
+        color: $accent;
+        margin-bottom: $spacing-sm;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          margin-bottom: $spacing-xs;
+          padding-left: $spacing-sm;
+          position: relative;
+
+          &::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+
+  .academic-highlights {
+    h3 {
+      margin-bottom: $spacing-sm;
+      color: $accent;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
+
+      li {
+        position: relative;
+        padding-left: $spacing-md;
+        margin-bottom: $spacing-xs;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+// Nøkkelrammer for rotering av hjulet og motrotasjon for bildene
+@keyframes spinWheel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinWheelReverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* Media query for mobil */
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .education-description {
+    max-width: 100%;
+  }
+  /* Overstyr marginene slik at .tech-images sirkelen sentreres */
+  .tech-images {
+    margin: 0 auto !important;
+  }
+}
