@@ -1,19 +1,8 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import '../styles/components/_hero.scss';
 
 const Hero = () => {
-  const [currentWord, setCurrentWord] = useState(0);
-  const words = ['Innovatør', 'Koder', 'Skaper', 'Arkitekt', 'kollega?'];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWord((prev) => (prev + 1) % words.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="hero">
       <div className="container">
@@ -27,7 +16,7 @@ const Hero = () => {
           <h1 style={{ 
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'flex-start', // endret fra center til flex-start
+            justifyContent: 'flex-start',
             width: '100%',
             gap: '0.5rem'
           }}>
@@ -42,8 +31,8 @@ const Hero = () => {
                 2000,
                 'Arkitekt',
                 2000,
-                'kollega',
-                5000, // Pause for 5 seconds on "kollega"
+                'kollega?',
+                5000,
                 '',
                 1000,
               ]}
