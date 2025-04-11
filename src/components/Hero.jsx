@@ -1,9 +1,11 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import '../styles/components/_hero.scss';
 
 const Hero = () => {
   const [currentWord, setCurrentWord] = useState(0);
-  const words = ['Innovatør', 'Løsningsdesigner', 'Koder', 'Skaper', 'Arkitekt'];
+  const words = ['Innovatør', 'Koder', 'Skaper', 'Arkitekt', 'kollega?'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,23 +32,31 @@ const Hero = () => {
             gap: '0.5rem'
           }}>
             <span className="highlight" style={{ flexShrink: 0 }}>Din nye  </span>
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={currentWord}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                style={{ 
-                  display: 'inline-block',
-                  minWidth: '250px',
-                  textAlign: 'left',
-                  marginLeft: '2rem'
-                }}
-              >
-                {words[currentWord]}
-              </motion.span>
-            </AnimatePresence>
+            <TypeAnimation
+              sequence={[
+                'Innovatør',
+                2000,
+                'Koder',
+                2000,
+                'Skaper',
+                2000,
+                'Arkitekt',
+                2000,
+                'kollega',
+                5000, // Pause for 5 seconds on "kollega"
+                '',
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ 
+                display: 'inline-block',
+                minWidth: '250px',
+                textAlign: 'left',
+                marginLeft: '2rem'
+              }}
+              repeat={Infinity}
+            />
           </h1>
           
           <motion.p

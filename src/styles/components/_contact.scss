@@ -4,10 +4,9 @@
   padding: $spacing-xl 0;
   background: linear-gradient(
     to bottom,
-    $background 30%,
-    rgba(44, 255, 2, 0.705) 100%
+    $background 0%,
+    #2cff02b4 100%
   );
-  margin-top: $spacing-xl;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -16,12 +15,18 @@
   margin-right: -50vw;
   padding: $spacing-xl;
 
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    padding: 0 $spacing-md;
+  }
+
   .contact-content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 $spacing-xl;
+    padding: 0 $spacing-md;
   }
 
   .contact-info {
@@ -76,11 +81,28 @@
     margin: 0 auto;
     padding: $spacing-lg 0;
     
-    p {
+    .desktop-message {
       font-size: 1.1rem;
       line-height: 1.8;
       color: $text;
       opacity: 0.9;
+      padding: 0 $spacing-md;
+    }
+
+    .mobile-message {
+      display: none;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: $text;
+      opacity: 0.9;
+      padding: 0 $spacing-md;
+    }
+
+    .built-with {
+      text-align: center;
+      color: rgba($text, 0.6);
+      font-size: 0.9rem;
+      margin-top: $spacing-lg;
     }
   }
 }
@@ -92,6 +114,9 @@
   justify-items: center;
   margin-bottom: $spacing-xl;
   padding: $spacing-lg 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-card {
@@ -109,6 +134,7 @@
   width: 100%;
   min-height: 200px;
   justify-content: center;
+  text-decoration: none;
   
   &:hover {
     transform: translateY(-5px);
@@ -127,5 +153,114 @@
     text-align: center;
     word-break: break-word;
     max-width: 100%;
+    padding: 0 $spacing-sm;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .contact-section {
+    padding: $spacing-lg 0;
+    margin-top: $spacing-lg;
+
+    h2 {
+      padding: 0 $spacing-lg;
+      margin-bottom: $spacing-md;
+    }
+
+    .contact-content {
+      padding: 0 $spacing-sm;
+    }
+
+    .contact-message {
+      padding: $spacing-md 0;
+      
+      .desktop-message {
+        display: none;
+      }
+
+      .mobile-message {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 $spacing-sm;
+      }
+    }
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+    padding: $spacing-md $spacing-lg;
+  }
+
+  .contact-card {
+    padding: $spacing-md;
+    min-height: 120px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: $spacing-md;
+
+    .contact-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0;
+      min-width: 40px;
+    }
+
+    .contact-link {
+      font-size: 1rem;
+      padding: 0;
+      text-align: left;
+    }
+  }
+}
+
+// Small mobile devices
+@media (max-width: 480px) {
+  .contact-section {
+    padding: $spacing-md 0;
+    margin-top: $spacing-md;
+
+    h2 {
+      padding: 0 $spacing-md;
+      font-size: 1.75rem;
+    }
+
+    .contact-content {
+      padding: 0 $spacing-xs;
+    }
+
+    .contact-message {
+      padding: $spacing-sm 0;
+      
+      .desktop-message {
+        display: none;
+      }
+
+      .mobile-message {
+        display: block;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 0 $spacing-xs;
+      }
+    }
+  }
+
+  .contact-grid {
+    padding: $spacing-md $spacing-md;
+  }
+
+  .contact-card {
+    padding: $spacing-sm $spacing-md;
+    min-height: 100px;
+
+    .contact-icon {
+      font-size: 1.5rem;
+      min-width: 35px;
+    }
+
+    .contact-link {
+      font-size: 0.95rem;
+    }
   }
 }

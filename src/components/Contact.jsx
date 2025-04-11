@@ -7,8 +7,11 @@ const Contact = () => {
     <section className="contact-section" data-aos="fade-up">
       <h2>Ta Kontakt</h2>
       <div className="contact-message">
-          <p>
+          <p className="desktop-message">
           Takk for at du tar deg tid til å vurdere min søknad! Jeg håper vi kan ta en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale. Jeg ser frem til muligheten for å bidra med mine ferdigheter og skape verdi i deres team
+          </p>
+          <p className="mobile-message">
+          Takk for at du tar deg tid til å vurdere min søknad! Jeg håper vi kan ta en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale.
           </p>
         </div>
       
@@ -53,15 +56,15 @@ const Contact = () => {
           >
             <FaLinkedin className="contact-icon" />
             <span className="contact-link">
-              LinkedIn
+              linkedin.com/in/joachim-christiansen-8a5080257
             </span>
           </motion.a>
         </div>
       </motion.div>
 
       <div className="contact-message">
-          <p>
-          Bygget med React, Sass, hostet på Netfliy
+          <p className="built-with">
+          Bygget med React, Javascript, Sass -  hostet på Netfliy
           </p>
         </div>
     </section>

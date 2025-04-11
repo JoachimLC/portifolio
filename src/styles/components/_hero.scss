@@ -1,3 +1,5 @@
+@import '../variables';
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -40,5 +42,41 @@
 
   .hero-cta {
     margin-top: $spacing-lg;
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .hero {
+    padding: $spacing-lg $spacing-md;
+    min-height: 80vh;
+
+    .hero-content {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Small mobile devices
+@media (max-width: 480px) {
+  .hero {
+    padding: $spacing-md $spacing-sm;
+    min-height: 70vh;
+
+    .hero-content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+    }
   }
 } 
