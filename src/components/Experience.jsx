@@ -10,23 +10,26 @@ const Experience = () => {
   const technicalSkills = [
     {
       category: 'Programmeringsspråk',
-      skills: ['JavaScript', 'Python', 'Java', 'C++', 'SQL']
+      skills: ['JavaScript', 'Java', 'No-code i Power Platform']
     },
     {
       category: 'Webutvikling',
-      skills: ['HTML5', 'CSS3', 'React', 'Node.js', 'Express', 'RESTful API-er']
+      skills: ['HTML5', 'CSS3', 'React', 'Node.js', 'Hono', 'RESTful API-er']
     },
     {
-      category: 'Databasesystemer',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Database-design']
-    },
+        category: 'Microsoft-teknologier',
+        skills: [
+          'Microsoft 365',
+          'Power Platform',
+          'PowerApps',
+          'Power Automate',
+          'Microsoft Audit API',
+          'Azure DevOps',
+        ]
+      },
     {
       category: 'Utviklingsverktøy',
-      skills: ['Git', 'Docker', 'VS Code', 'Postman', 'Jira']
-    },
-    {
-      category: 'Problemløsning',
-      skills: ['Algoritmer', 'Datastrukturer', 'Systemdesign', 'Feilsøking']
+      skills: ['Git', 'Github', 'VS Code', 'Visual Studio']
     }
   ];
 
@@ -63,10 +66,7 @@ const Experience = () => {
           }}
         >
           <p>
-            Som IT-konsulent har jeg jobbet med utvikling og implementering av
-            skreddersydde løsninger for ulike kunder. Min rolle har inkludert
-            både teknisk utvikling og kundekontakt, noe som har gitt meg verdifull
-            erfaring med å oversette forretningsbehov til tekniske løsninger.
+          I løpet av det siste studieåret har jeg jobbet som IT-konsulent hos Iqonic, parallelt med bacheloroppgaven min. Rollen har gitt meg bred erfaring innen både utvikling, rådgivning og kundedialog – og har styrket min forståelse for hva som kreves i konsulentrollen ute i praksis.
           </p>
         </div>
         <div
@@ -113,12 +113,11 @@ const Experience = () => {
         <div className="education-overview">
           <h3>Ansvar og Oppgaver</h3>
           <ul>
-            <li>Utvikling og vedlikehold av kundespesifikke løsninger</li>
-            <li>Systemintegrasjon og API-utvikling</li>
-            <li>Databaseoptimering og -administrasjon</li>
-            <li>Kundesupport og teknisk rådgiving</li>
-            <li>Dokumentasjon og kunnskapsdeling</li>
-            <li>Kvalitetssikring og testing</li>
+            <li>Utvikling og vedlikehold av nettsider i React og JavaScript</li>
+            <li>Microsoft 365-administrasjon og tilpasning av løsninger</li>
+            <li>Utvikling av PowerApps og Power Automate-flows i Power Platform</li>
+            <li>Automatisering av database-loggføring med Microsoft Audit API</li>
+            <li>Direkte kundedialog og behovskartlegging som selskapets ansikt utad</li>
           </ul>
         </div>
 
@@ -144,14 +143,15 @@ const Experience = () => {
         </div>
 
         <div className="academic-highlights">
-          <h3>Læringsutbytte og Refleksjon</h3>
-          <ul>
-            <li>Praktisk erfaring med kundeorientert utvikling</li>
-            <li>Forbedret evne til å kommunisere tekniske løsninger</li>
-            <li>Dypere forståelse av systemintegrasjon og arkitektur</li>
-            <li>Erfaring med å jobbe i tverrfaglige team</li>
-            <li>Utviklet evne til å prioritere og håndtere flere prosjekter</li>
-          </ul>
+        <h3>Læringsutbytte og Refleksjon</h3>
+<ul>
+  <li>Fikk praktisk erfaring med utvikling av kundeorienterte løsninger i React og Power Platform</li>
+  <li>Styrket evnen til å kommunisere tekniske løsninger til ikke-tekniske kunder og samarbeidspartnere</li>
+  <li>Fikk dypere innsikt i integrasjon mellom ulike systemer og hvordan automatisering kan forbedre arbeidsflyt</li>
+  <li>Lærte å balansere tekniske oppgaver med kundedialog og administrative prosesser</li>
+  <li>Utviklet evne til å håndtere flere parallelle prosjekter og prioritere oppgaver effektivt i en konsulentrolle</li>
+</ul>
+
         </div>
       </div>
     </motion.div>
