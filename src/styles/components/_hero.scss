@@ -57,10 +57,12 @@
   .hero {
     padding: $spacing-lg $spacing-md;
     min-height: 80vh;
+    padding-top: $spacing-xl;
 
     .hero-content {
       h1 {
         font-size: 2.5rem;
+        margin-top: $spacing-lg;
       }
 
       .hero-subtitle {
@@ -75,10 +77,12 @@
   .hero {
     padding: $spacing-md $spacing-sm;
     min-height: 70vh;
+    padding-top: $spacing-lg;
 
     .hero-content {
       h1 {
         font-size: 2rem;
+        margin-top: $spacing-md;
       }
 
       .hero-subtitle {

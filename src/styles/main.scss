@@ -51,9 +51,9 @@ h3 {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 $spacing-xl;
   position: relative;
   overflow-x: hidden;
+  padding: 0 $spacing-xl;
 
   @media (max-width: $breakpoint-lg) {
     padding: 0 $spacing-lg;
@@ -71,6 +71,10 @@ h3 {
 section {
   width: 100%;
   padding: $spacing-lg 0;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   & + section {
     padding-top: 0;
@@ -111,7 +115,6 @@ a {
 // Grid
 .grid {
   display: grid;
-  gap: $grid-gap;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
