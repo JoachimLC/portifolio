@@ -18,20 +18,21 @@ const Hero = () => {
             alignItems: 'center',
             justifyContent: 'flex-start',
             width: '100%',
-            gap: '0.5rem'
+            gap: '0.5rem',
+            flexWrap: 'wrap'
           }}>
-            <span className="highlight" style={{ flexShrink: 0 }}>Din nye  </span>
+            <span className="highlight" style={{ flexShrink: 0, marginRight: '2rem' }}>Din nye  </span>
             <TypeAnimation
               sequence={[
-                'Innovatør',
+                ' Innovatør',
                 2000,
-                'Koder',
+                ' Koder',
                 2000,
-                'Skaper',
+                ' Skaper',
                 2000,
-                'Arkitekt',
+                ' Arkitekt',
                 2000,
-                'kollega?',
+                ' kollega?',
                 5000,
                 '',
                 1000,
@@ -42,7 +43,10 @@ const Hero = () => {
                 display: 'inline-block',
                 minWidth: '250px',
                 textAlign: 'left',
-                marginLeft: '2rem'
+                
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap'
               }}
               repeat={Infinity}
             />
