@@ -36,7 +36,7 @@ const Navbar = ({ isScrolled }) => {
 
           <div className="social-links">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/JoachimLC"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -44,7 +44,7 @@ const Navbar = ({ isScrolled }) => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/joachim-christiansen-8a5080257/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
