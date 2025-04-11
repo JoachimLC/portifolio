@@ -56,7 +56,7 @@ const Contact = () => {
           >
             <FaLinkedin className="contact-icon" />
             <span className="contact-link">
-              linkedin.com/in/joachim-christiansen-8a5080257
+              LinkedIn
             </span>
           </motion.a>
         </div>
