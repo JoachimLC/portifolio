@@ -32,7 +32,7 @@ const Hero = () => {
                 2000,
                 ' Arkitekt',
                 2000,
-                ' kollega?',
+                ' Kollega?',
                 5000,
                 '',
                 1000,
