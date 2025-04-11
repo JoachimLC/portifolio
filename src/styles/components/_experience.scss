@@ -1,0 +1,46 @@
+.experience {
+  padding: $spacing-xl 0;
+  background-color: rgba($accent, 0.05);
+
+  .experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .experience-details {
+    h3 {
+      color: $accent;
+      margin-bottom: $spacing-xs;
+    }
+
+    .experience-period {
+      color: $text;
+      opacity: 0.8;
+      margin-bottom: $spacing-lg;
+    }
+
+    h4 {
+      color: $primary;
+      margin-top: $spacing-lg;
+      margin-bottom: $spacing-md;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: $spacing-lg;
+
+      li {
+        position: relative;
+        padding-left: $spacing-md;
+        margin-bottom: $spacing-xs;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+} 

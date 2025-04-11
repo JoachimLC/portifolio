@@ -1,0 +1,93 @@
+.education {
+  padding: $spacing-xl 0;
+
+  .education-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .education-overview {
+    margin-bottom: $spacing-xl;
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
+
+      li {
+        position: relative;
+        padding-left: $spacing-md;
+        margin-bottom: $spacing-xs;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .technical-skills {
+    margin-bottom: $spacing-xl;
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
+    }
+
+    .skill-category {
+      background-color: rgba($accent, 0.05);
+      padding: $spacing-md;
+      border-radius: 8px;
+      transition: transform $transition-fast;
+
+      h4 {
+        color: $accent;
+        margin-bottom: $spacing-sm;
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          margin-bottom: $spacing-xs;
+          padding-left: $spacing-sm;
+          position: relative;
+
+          &::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+
+  .academic-highlights {
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $spacing-md;
+
+      li {
+        position: relative;
+        padding-left: $spacing-md;
+        margin-bottom: $spacing-xs;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+} 

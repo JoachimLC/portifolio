@@ -1,0 +1,114 @@
+@import 'variables';
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $background;
+  color: $text;
+  line-height: 1.6;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: $spacing-md;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+// Layout
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+section {
+  padding: $spacing-xl 0;
+}
+
+// Links
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  padding: $spacing-xs $spacing-md;
+  background-color: $primary;
+  color: $secondary;
+  border: 2px solid $primary;
+  font-family: $font-secondary;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all $transition-fast;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: $grid-gap;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: $spacing-sm; }
+.mt-2 { margin-top: $spacing-md; }
+.mt-3 { margin-top: $spacing-lg; }
+.mt-4 { margin-top: $spacing-xl; }
+
+// Media queries
+@media (max-width: $breakpoint-md) {
+  section {
+    padding: $spacing-lg 0;
+  }
+}
+
+// Import component styles
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/project';
+@import 'components/experience';
+@import 'components/education';
+@import 'components/contact'; 
