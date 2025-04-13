@@ -90,4 +90,100 @@
       }
     }
   }
+}
+
+.bachelor-thesis {
+  margin-top: $spacing-xl;
+  padding: $spacing-lg;
+  background-color: rgba($background, 0.5);
+  border-radius: 8px;
+  border-left: 4px solid $accent;
+
+  h3 {
+    color: $primary;
+    margin-bottom: $spacing-md;
+  }
+
+  .thesis-content {
+    p {
+      margin-bottom: $spacing-md;
+      line-height: 1.8;
+    }
+  }
+
+  .thesis-links {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    margin-top: $spacing-lg;
+  }
+
+  .thesis-link {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-xs;
+    color: $primary;
+    text-decoration: none;
+    transition: all $transition-fast;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: 4px;
+    background-color: rgba($accent, 0.1);
+
+    &:hover {
+      background-color: rgba($accent, 0.2);
+      transform: translateX(4px);
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: $spacing-lg;
+    padding: $spacing-md;
+    margin-left: $spacing-sm;
+    margin-right: $spacing-sm;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    .thesis-content {
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: $spacing-sm;
+      }
+    }
+
+    .thesis-links {
+      margin-top: $spacing-md;
+      gap: $spacing-xs;
+    }
+
+    .thesis-link {
+      padding: $spacing-xs $spacing-sm;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: $spacing-md;
+    padding: $spacing-sm;
+    margin-left: $spacing-xs;
+    margin-right: $spacing-xs;
+    border-left-width: 3px;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    .thesis-content {
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    .thesis-link {
+      font-size: 0.9rem;
+    }
+  }
 } 
