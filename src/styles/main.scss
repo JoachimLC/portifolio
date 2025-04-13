@@ -71,8 +71,20 @@ h3 {
 
 section {
   width: 100%;
-  padding: $spacing-lg 0;
+  padding: $spacing-lg $spacing-xl;
   position: relative;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: $spacing-lg $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-lg $spacing-md;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-lg $spacing-sm;
+  }
 
   &:last-child {
     padding-bottom: 0;
