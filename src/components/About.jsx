@@ -36,14 +36,42 @@ const About = () => {
                 <h4>Hobbyer</h4>
                 <ul>
                   <li>Musikkproduksjon</li>
-                  <li>Trening</li>
-                  <li>Teltur i skog og fjell</li>
+                  <li>Formel 1</li>
+                  <li>Teltur i skog og fjell (Nytt av i år er fiske)</li>
                   <li>Golf</li>
                   <li>Gaming</li>
-                  <li>Nytt av i år - fisking</li>
 
                 </ul>
               </div>
+              
+              
+            </div>
+            
+            <div className="skills-grid">
+              <div className="skill-category">
+                <h4>Musikk</h4>
+                <ul>
+                  <li>This will destroy you</li>
+                  <li>Marsh</li>
+                  <li>Sigur Ros</li>
+                  <li>Lager også egne greier under seudonymet <strong>Jacoo</strong>, sjekk det ut!</li>
+                </ul>
+                <div className="arrow-down">
+                  <span>↓</span>
+                </div>
+                <div className="spotify-player">
+                  <iframe
+                    src="https://open.spotify.com/embed/artist/65NrBzD3Jnf1iqbDjuUYjD"
+                    width="100%"
+                    height="352"
+                    frameBorder="0"
+                    allowFullScreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+              
               
             </div>
           </div>

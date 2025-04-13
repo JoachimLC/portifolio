@@ -95,15 +95,41 @@ const Education = () => {
         </div>
 
         <div className="academic-highlights">
-        <h3>Akademiske Prestasjoner</h3>
-<ul>
-  <li>SPA webapplikasjon med Typescript og React, med datahenting fra Hono-server for fremstilling av portefølje.</li>
-  <li>Android-applikasjon for hundeeiere med Kotlin + Jetpack Compose + Firebase.</li>
-  <li>C# og utvikling av rammerverk i .NET for en logistikkløsning for lagerstyring.</li>
-  <li>Design, utarbeiding og normalisering av SQL- og MongoDB-databaser for en treningsapplikasjon, inkludert utvikling av relevante views.</li>
-  <li>Java OOP-applikasjon som en mockup for en videostreamingtjeneste.</li>
-  <li>Algoritmer i C for effektiv datatraversering (binære trær, heap, grafer).</li>
-</ul>
+          <h3>Akademiske Prestasjoner</h3>
+          <ul>
+            <li>SPA webapplikasjon med Typescript og React, med datahenting fra Hono-server for fremstilling av portefølje.</li>
+            <li>Android-applikasjon for hundeeiere med Kotlin + Jetpack Compose + Firebase.</li>
+            <li>C# og utvikling av rammerverk i .NET for en logistikkløsning for lagerstyring.</li>
+            <li>Design, utarbeiding og normalisering av SQL- og MongoDB-databaser for en treningsapplikasjon, inkludert utvikling av relevante views.</li>
+            <li>Java OOP-applikasjon som en mockup for en videostreamingtjeneste.</li>
+            <li>Algoritmer i C for effektiv datatraversering (binære trær, heap, grafer).</li>
+          </ul>
+        </div>
+
+        <div className="bachelor-thesis">
+          <h3>Bacheloroppgave</h3>
+          <div className="thesis-content">
+            <p>
+              Som avsluttende prosjekt i bachelorgraden min ved Høgskolen i Østfold, skriver jeg bacheloroppgave i samarbeid med konsulenthuset Evidi. 
+              I oppgaven utvikler vi et API i .NET med både REST- og GraphQL-endepunkter, og undersøker hvordan GraphQL kan bidra til bedre ytelse og raskere utvikling i kundeprosjekter.
+            </p>
+            <p>
+              API-et er satt opp i Microsoft Azure, med infrastruktur som kode ved hjelp av Bicep og automatisert deploy gjennom CI/CD-pipelines. 
+              Vi jobber etter DevOps-prinsipper, og har hatt fokus på både teknisk kvalitet og praktisk nytteverdi for en reell konsulenthverdag.
+            </p>
+            <p>
+              Målet med oppgaven er å sammenligne hvordan ulike tilnærminger til API-design påvirker datatilgjengelighet, ytelse og fleksibilitet i løsninger som skal møte kundenes behov. 
+              Oppgaven har gitt meg dypere innsikt i moderne utviklingsprosesser, og verdifull erfaring med samarbeid i tverrfaglig team.
+            </p>
+            <div className="thesis-links">
+              <a href="https://bachelor2025-g3-app-service.azurewebsites.net/swagger/index.html" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                🔹 Prøv REST-endepunktene
+              </a>
+              <a href="https://bachelor2025-g3-app-service.azurewebsites.net/graphql/" target="_blank" rel="noopener noreferrer" className="thesis-link">
+                🔹 Prøv GraphQL-endepunktene
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
