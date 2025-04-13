@@ -163,40 +163,7 @@ const Education = () => {
           </p>
         </div>
       </div>
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        marginTop: '3rem',
-        marginBottom: '2rem'
-      }}>
-        <a 
-          href="#" 
-          style={{ 
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            padding: '0.8rem 1.5rem',
-            backgroundColor: 'rgba(46, 125, 50, 0.1)',
-            color: '#2e7d32',
-            border: '1px solid rgba(46, 125, 50, 0.2)',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            transition: 'all 0.3s ease',
-            fontSize: '0.9em',
-            fontWeight: '500'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(46, 125, 50, 0.15)';
-            e.currentTarget.style.transform = 'translateY(-2px)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.backgroundColor = 'rgba(46, 125, 50, 0.1)';
-            e.currentTarget.style.transform = 'translateY(0)';
-          }}
-        >
-          <span>↑</span> Ta meg til toppen
-        </a>
-      </div>
+      
     </motion.div>
   )
 }
