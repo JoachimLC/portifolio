@@ -8,6 +8,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  padding: $spacing-xl $spacing-lg;
 
   &::before {
     content: '';
@@ -27,6 +28,9 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (max-width: $breakpoint-md) {
       grid-template-columns: 1fr;
@@ -40,6 +44,8 @@
     max-width: 800px;
     width: 100%;
     overflow: hidden;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .hero-image {
@@ -89,6 +95,8 @@
     line-height: 1.1;
     width: 100%;
     overflow: hidden;
+    word-wrap: break-word;
+    hyphens: auto;
 
     .highlight {
       color: $accent;
@@ -101,6 +109,8 @@
     color: $text;
     width: 100%;
     overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .hero-cta {
