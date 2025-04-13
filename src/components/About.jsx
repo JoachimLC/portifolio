@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/main.scss';
-
+import '../styles/components/_about.scss';
 const About = () => {
   return (
     <section id="about" className="about-section">
@@ -54,7 +54,7 @@ Jeg har fra før en bachelor som Sosionom. Før jeg startet med IT, jobbet jeg f
                   <li>This will destroy you</li>
                   <li>Marsh</li>
                   <li>Sigur Ros</li>
-                  <li>Lager også egne greier under seudonymet <strong>Jacoo</strong>, sjekk det ut!</li>
+                  <li>Lager også egne greier under pseudonymet <strong>Jacoo</strong>, sjekk det ut!</li>
                 </ul>
                 <div className="arrow-down">
                   <span>↓</span>

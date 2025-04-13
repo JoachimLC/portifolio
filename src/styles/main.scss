@@ -59,16 +59,16 @@ h3 {
   position: relative;
   padding: 0 $spacing-xl;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-xl) {
     padding: 0 $spacing-lg;
   }
 
   @media (max-width: $breakpoint-md) {
-    padding: 0 $spacing-md;
+    padding: 0 $spacing-sm;
   }
 
   @media (max-width: $breakpoint-sm) {
-    padding: 0 $spacing-sm;
+    padding: 0 $spacing-xs;
   }
 }
 
@@ -76,10 +76,6 @@ section {
   width: 100%;
   padding: $spacing-lg $spacing-xl;
   position: relative;
-
-  @media (max-width: $breakpoint-lg) {
-    padding: $spacing-lg $spacing-lg;
-  }
 
   @media (max-width: $breakpoint-md) {
     padding: $spacing-md $spacing-md;
@@ -177,93 +173,7 @@ a {
 @import 'components/education';
 @import 'components/contact';
 
-// About Section
-.about-section {
-  background-color: rgba($background, 0.8);
-  padding: $spacing-xl 0;
 
-  .about-content {
-    display: grid;
-    gap: $spacing-lg;
-    margin-top: $spacing-lg;
-
-    @media (min-width: $breakpoint-md) {
-      grid-template-columns: 2fr 1fr;
-    }
-  }
-
-  .about-text {
-    p {
-      margin-bottom: $spacing-md;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      max-width: 800px;
-    }
-  }
-
-  .skills {
-    h3 {
-      margin-bottom: $spacing-md;
-    }
-
-    .skills-grid {
-      display: grid;
-      gap: $spacing-md;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .skill-category {
-      h4 {
-        color: $primary;
-        margin-bottom: $spacing-sm;
-        font-size: 1.2rem;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin-bottom: $spacing-md;
-
-        li {
-          margin-bottom: $spacing-xs;
-          padding-left: $spacing-sm;
-          position: relative;
-
-          &::before {
-            content: "•";
-            color: $primary;
-            position: absolute;
-            left: 0;
-          }
-        }
-      }
-
-      .arrow-down {
-        text-align: center;
-        margin: $spacing-md 0;
-        font-size: 2rem;
-        color: $accent;
-        animation: bounce 2s infinite ease-in-out;
-
-        span {
-          display: inline-block;
-        }
-      }
-
-      .spotify-player {
-        margin-top: $spacing-md;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        
-        iframe {
-          display: block;
-          background: $background;
-        }
-      }
-    }
-  }
-}
 
 @keyframes bounce {
   0%, 100% {
@@ -271,5 +181,25 @@ a {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+// About Section
+#about.about-section {
+  background-color: rgba($background, 0.8);
+  padding: 0 !important;
+
+  .about-content {
+    display: grid;
+    gap: $spacing-lg;
+    margin-top: $spacing-lg;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @media (min-width: 1400px) {
+      grid-template-columns: 2fr 1fr;
+      max-width: 1200px;
+    }
   }
 }
