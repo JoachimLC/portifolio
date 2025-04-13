@@ -4,7 +4,7 @@ import '../styles/components/_contact.scss';
 
 const Contact = () => {
   return (
-    <section className="contact-section" data-aos="fade-up">
+    <section className="contact-section">
       <h2>Ta Kontakt</h2>
       <div className="contact-message">
           <p className="desktop-message">

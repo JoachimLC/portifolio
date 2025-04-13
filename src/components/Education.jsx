@@ -47,7 +47,6 @@ const Education = () => {
   return (
     <motion.div
       className="education"
-      data-aos="fade-up"
     >
       <h2>Bachelor i Informatikk</h2>
       <h3>

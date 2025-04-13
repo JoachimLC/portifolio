@@ -119,51 +119,63 @@
     .cta-buttons {
       display: flex;
       gap: $spacing-md;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
 
       @media (max-width: $breakpoint-sm) {
         gap: $spacing-sm;
         justify-content: center;
         width: 100%;
-        flex-wrap: nowrap;
       }
     }
 
-    .btn-primary,
-    .btn-secondary {
-      font-size: 1.1rem;
-      padding: $spacing-sm $spacing-lg;
+    .btn {
+      font-size: 1rem;
+      padding: $spacing-xs $spacing-md;
       border-radius: 4px;
       transition: all $transition-fast;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 2px solid transparent;
+      white-space: nowrap;
+      min-width: 140px;
 
       @media (max-width: $breakpoint-sm) {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         padding: $spacing-xs $spacing-sm;
-        min-width: 120px;
-        text-align: center;
+        min-width: 110px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
     }
 
     .btn-primary {
       background-color: $accent;
       color: $secondary;
-      border: 2px solid $accent;
+      border-color: $accent;
 
       &:hover {
         background-color: transparent;
         color: $accent;
-        transform: translateY(-2px);
       }
     }
 
     .btn-secondary {
       background-color: transparent;
       color: $primary;
-      border: 2px solid $primary;
+      border-color: $primary;
 
       &:hover {
         background-color: $primary;
         color: $secondary;
-        transform: translateY(-2px);
       }
     }
   }

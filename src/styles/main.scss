@@ -1,5 +1,11 @@
 @import 'variables';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 // Reset and base styles
 * {
   margin: 0;
@@ -9,12 +15,10 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -25,7 +29,6 @@ body {
   line-height: 1.6;
   min-width: 100%;
   position: relative;
-  overflow-x: hidden;
 }
 
 // Typography
@@ -79,11 +82,11 @@ section {
   }
 
   @media (max-width: $breakpoint-md) {
-    padding: $spacing-lg $spacing-md;
+    padding: $spacing-md $spacing-md;
   }
 
   @media (max-width: $breakpoint-sm) {
-    padding: $spacing-lg $spacing-sm;
+    padding: $spacing-sm $spacing-sm;
   }
 
   &:last-child {
@@ -219,6 +222,7 @@ a {
       ul {
         list-style: none;
         padding: 0;
+        margin-bottom: $spacing-md;
 
         li {
           margin-bottom: $spacing-xs;
@@ -239,10 +243,10 @@ a {
         margin: $spacing-md 0;
         font-size: 2rem;
         color: $accent;
+        animation: bounce 2s infinite ease-in-out;
 
         span {
           display: inline-block;
-          animation: bounce 1.5s infinite;
         }
       }
 
@@ -262,13 +266,10 @@ a {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%, 100% {
     transform: translateY(0);
   }
-  40% {
+  50% {
     transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
   }
 }

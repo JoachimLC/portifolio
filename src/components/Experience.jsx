@@ -42,7 +42,7 @@ const Experience = () => {
   ];
 
   return (
-    <motion.div className="education" data-aos="fade-up">
+    <motion.div className="education">
       <h2>Erfaring som IT-konsulent (deltid)</h2>
 
       <div

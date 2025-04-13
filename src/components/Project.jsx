@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import cratediggerImage from '../assets/images/cratedigger.png'
-
+ 
 const Project = () => {
   const techStack = [
     'React',
     'Node.js',
-    'Express',
+    'Hono',
     'MongoDB',
     'Spotify API',
     'Discogs API'
@@ -40,10 +40,7 @@ const Project = () => {
   ]
 
   return (
-    <motion.div
-      className="project"
-      data-aos="fade-up"
-    >
+    <motion.div className="project">
       <h2>CrateDigger</h2>
       
       <div className="project-content">

@@ -23,7 +23,7 @@ function App() {
     })
 
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 20)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -37,31 +37,31 @@ function App() {
       <main>
         <Hero />
         
-        <section id="project">
+        <section id="project" data-aos="fade-up">
           <div className="container">
             <Project />
           </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" data-aos="fade-up">
           <div className="container">
             <Experience />
           </div>
         </section>
 
-        <section id="education">
+        <section id="education" data-aos="fade-up">
           <div className="container">
             <Education />
           </div>
         </section>
 
-        <section id="about">
+        <section id="about" data-aos="fade-up">
           <div className="container">
             <About />
           </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
           <div className="container">
             <Contact />
           </div>
