@@ -60,8 +60,8 @@ const Project = () => {
               tilgjengelig på vinyl! Det er en frustrerende opplevelse, og derfor startet jeg på prosjektet CrateDigger, så jeg aldri trenger å møte den skuffelsen igjen.
               <br></br>
               <br></br>
-              Per i dag er det fungerende innloggingsfunksjonalitet, og du kan logge inn med Spotify for å hente ut din musikksmak – og bruke den som grunnlag for dine digitale platekasser. All logikken er enda ikke på plass, men jeg planlegger å ha en demo ute innen sommeren 2025.
-              Tanken er å implementere et stegvis betalingsnivå som lar deg eksportere spillelister fra dine digitale platekasser – jo høyere nivå, jo flere funksjoner.
+              Per i dag er det fungerende innloggingsfunksjonalitet, og du kan benytte Spotify brukeren din til å hente ut din musikksmak – slik at den senere kan brukes som grunnlag for dine digitale platekasser. All logikken er enda ikke på plass, men jeg planlegger å ha en demo ute innen sommeren 2025.
+              Tanken er å ha en gratis versjon, og deretter implementere et stegvis betalingsnivå som lar deg eksportere spillelister fra dine digitale platekasser – jo høyere nivå, jo flere funksjoner.
               <br></br>
               <br></br>
               Platformen benytter seg av 2 apier, Discogs og Spotify. Discogs brukes til å hente data om vinylplater, og Spotify brukes til å hente ut din musikksmakk og eksportere spillelisten til spotify kontoen din. Discogs benyttes til å filtrere spillelistene så de kun består av vinylplater.
