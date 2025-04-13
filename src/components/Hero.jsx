@@ -69,7 +69,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Holder meg oppdatert på de nyeste teknologitrendene (inkludert AI-verktøy) for å skape smarte og effektive løsninger. Enten jeg jobber i team eller selvstendig, lærer jeg raskt og setter meg inn i nødvendige teknologier.
+              Holder meg løpende oppdatert på de nyeste teknologitrendene (inkludert AI-verktøy) for å skape smarte og effektive løsninger. Enten jeg jobber i team eller selvstendig, lærer jeg raskt og setter meg inn i nødvendige teknologier.
             </motion.p>
 
             <motion.div

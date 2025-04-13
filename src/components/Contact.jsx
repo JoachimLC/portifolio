@@ -8,10 +8,10 @@ const Contact = () => {
       <h2>Ta Kontakt</h2>
       <div className="contact-message">
           <p className="desktop-message">
-          Takk for at du tar deg tid til å vurdere min søknad! Jeg håper vi kan ta en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale. Jeg ser frem til muligheten for å bidra med mine ferdigheter og skape verdi i deres team
+          Takk for at du tar deg tid til å vurdere min søknad! Jeg tar gjerne en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale. Jeg ser frem til muligheten for å bidra med mine ferdigheter og skape verdi i deres team
           </p>
           <p className="mobile-message">
-          Takk for at du tar deg tid til å vurdere min søknad! Jeg håper vi kan ta en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale.
+          Takk for at du tar deg tid til å vurdere min søknad! Jeg tar gjerne en uformell prat om et spennende fremtidig samarbeid – enten det er over en kopp kaffe eller en kort samtale.
           </p>
         </div>
       

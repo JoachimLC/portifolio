@@ -15,22 +15,22 @@ const Project = () => {
     {
       step: 1,
       title: 'Koble til Spotify',
-      description: 'Koble til Spotify-kontoen din og velg en spilleliste å basere dine digitale platekasser på.'
+      description: 'Koble til Spotify-kontoen din og velg en spilleliste dine digitale platekasser skal være basert på.'
     },
     {
       step: 2,
-      title: 'Generer en Kasse',
+      title: 'Generer en kasse',
       description: 'Vi lager en digital platekasse for deg.'
     },
     {
       step: 3,
-      title: 'Lagre Den',
+      title: 'Eksporter den',
       description: 'Kassen din blir automatisk eksportert som en ny spilleliste til spotify kontoen din.'
     },
     {
       step: 4,
-      title: 'Oppdag Vinyl',
-      description: 'Lytt gjennom plater og gled deg over at de alle garantert finnes på vinyl.'
+      title: 'Oppdag vinyl',
+      description: 'Lytt gjennom sanger og gled deg over at de alle garantert finnes på vinyl.'
     },
     {
       step: 5,
@@ -51,16 +51,16 @@ const Project = () => {
               CrateDigger er prosjektet jeg jobber på ved siden av bacheloroppgaven, og deltidsjobben som it-konsulent/utvikler. 
               <br></br>
               <br></br>
-              Det er en webapplikasjon som hjelper musikkentusiaster å oppdage nye vinylplater basert på deres musikksmak. Tanken bak var at jeg selv samler på
+              Det er en webapplikasjon som vil hjelpe musikkentusiaster til å oppdage nye vinylplater basert på deres egen musikksmak. Tanken bak var at jeg selv samler på
               vinyl, og synes det er gøy å gå i platebutikker og bla gjennom platekassene for å se hva de har. Så tenkte jeg at det hadde vært kult med en
-              digital versjon av dette, hvor du fikk laget egne "digitale platekasser" å romstere gjennom, men med bare vinyl som passer til din smak!
+              digital versjon av dette, hvor du fikk laget egne "digitale platekasser" å romstere gjennom, men kun med vinyl som passer til din smak!
               <br></br>
               <br></br>
-              Bare bruk spotify radio tenker du kanskje. Men det er mange ganger jeg har snublet over en utrolig låt eller et band, bare for å finne ut at det ikke er 
-              tilgjengelig på vinyl! Det er en frustrerende opplevelse, og dermed startet jeg på prosjektet CrateDigger, så jeg aldri trenger å møte den skuffelsen igjen.
+              Bare bruk Spotify radio tenker du kanskje. Men det er mange ganger jeg har snublet over en utrolig fin låt eller et nytt band, bare for å finne ut at det ikke er 
+              tilgjengelig på vinyl! Det er en frustrerende opplevelse, og derfor startet jeg på prosjektet CrateDigger, så jeg aldri trenger å møte den skuffelsen igjen.
               <br></br>
               <br></br>
-              Per i dag er det fungerende innloggingsfunksjonalitet, og du kan logge inn med Spotify for å hente ut din musikksmak – og bruke den som grunnlag for dine digitale platekasser. All logikken er enda ikke på plass, men jeg planlegger å ha en demo ute innen sommerne.
+              Per i dag er det fungerende innloggingsfunksjonalitet, og du kan logge inn med Spotify for å hente ut din musikksmak – og bruke den som grunnlag for dine digitale platekasser. All logikken er enda ikke på plass, men jeg planlegger å ha en demo ute innen sommeren 2025.
               Tanken er å implementere et stegvis betalingsnivå som lar deg eksportere spillelister fra dine digitale platekasser – jo høyere nivå, jo flere funksjoner.
               <br></br>
               <br></br>
@@ -69,7 +69,7 @@ const Project = () => {
 
             <h3>Prosjektoppgaver </h3>
             <p>
-              Jeg har jobbet med følgende:
+              I dette prosjektet har jeg jobbet med følgende:
             </p>
             <ul>
               <li>Design og implementering av frontend-arkitektur</li>

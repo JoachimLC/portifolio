@@ -145,10 +145,10 @@ const Experience = () => {
         <div className="academic-highlights">
         <h3>Læringsutbytte og Refleksjon</h3>
 <ul>
-  <li>Fikk praktisk erfaring med utvikling av kundeorienterte løsninger i React og Power Platform</li>
-  <li>Styrket evnen til å kommunisere tekniske løsninger til ikke-tekniske kunder og samarbeidspartnere</li>
-  <li>Fikk dypere innsikt i integrasjon mellom ulike systemer og hvordan automatisering kan forbedre arbeidsflyt</li>
-  <li>Lærte å balansere tekniske oppgaver med kundedialog og administrative prosesser</li>
+  <li>Fått praktisk erfaring med utvikling av kundeorienterte løsninger i React og Power Platform</li>
+  <li>Styrket min evnetil å kommunisere tekniske løsninger til ikke-tekniske kunder og samarbeidspartnere</li>
+  <li>Fått dypere innsikt i integrasjon mellom ulike systemer og hvordan automatisering kan forbedre arbeidsflyt</li>
+  <li>Lært å balansere tekniske oppgaver med kundedialog og administrative prosesser</li>
   <li>Utviklet evne til å håndtere flere parallelle prosjekter og prioritere oppgaver effektivt i en konsulentrolle</li>
 </ul>
 

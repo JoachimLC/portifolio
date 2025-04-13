@@ -9,8 +9,8 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
           <p>
-  Jeg er en engasjert og nysgjerrig snart ferdig utdannet utvikler som synes det er gøy å skape intuitive og effektive digitale løsninger. 
-  Våren 2025 fullfører jeg en bachelor i design og utvikling av IT-systemer ved Høgskolen i Østfold, og ved siden av studiene har jeg jobbet som IT-konsulent hos <strong>Iqonic</strong>. 
+  Jeg er en engasjert, nysgjerrig og snart ferdig utdannet utvikler som synes det er gøy å skape intuitive og effektive digitale løsninger. 
+  Våren 2025 fullfører jeg min bachelor i design og utvikling av IT-systemer ved Høgskolen i Østfold. Ved siden av studiene har jeg jobbet som IT-konsulent hos <strong>Iqonic</strong>. 
   Der har jeg fått praktisk erfaring med webutvikling i React og JavaScript, Microsoft 365-administrasjon, utvikling i Power Platform og tett kundedialog.
 </p>
 <p>
@@ -23,7 +23,7 @@ const About = () => {
   samt algoritmer og strukturert problemløsning i C og Java. Mitt personlige sideprosjekt <strong>CrateDigger</strong> – en webapp for musikkoppdagelse skriver jeg om her på <a href="http://joachimcv.dev" target="_blank">JoachimCV.dev</a> litt lenger opp.
 </p>
 <p>
-  Før jeg startet med IT, jobbet jeg flere år som sosionom. Denne bakgrunnen har gitt meg sterke samarbeidsevner, god forståelse for mennesker og evnen til å kommunisere tydelig – egenskaper som har vist seg uvurderlige også i utviklerrollen.
+Jeg har fra før en bachelor som Sosionom. Før jeg startet med IT, jobbet jeg flere år som sosionom. Denne bakgrunnen har gitt meg sterke samarbeidsevner, god forståelse for mennesker og evnen til å kommunisere tydelig – egenskaper som har vist seg uvurderlige også i utviklerrollen.
 </p>
 <p>
   Jeg drives av å lære, bygge løsninger som fungerer, og samarbeide med folk som brenner for det de gjør. Nå ser jeg frem til å ta neste steg i karrieren, og bidra med både teknisk kompetanse og et helhetlig blikk på brukeren og behovet.

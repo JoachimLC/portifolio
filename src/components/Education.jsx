@@ -130,6 +130,38 @@ const Education = () => {
             </div>
           </div>
         </div>
+
+        <div className="previous-education" style={{ 
+          marginTop: '4rem',
+          padding: '1.5rem',
+          backgroundColor: 'rgba(46, 125, 50, 0.03)',
+          border: '1px dashed rgba(46, 125, 50, 0.2)',
+          borderRadius: '8px',
+          position: 'relative',
+          fontStyle: 'italic'
+        }}>
+          <h3 style={{ 
+            color: '#2e7d32',
+            marginBottom: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            fontSize: '1.1em',
+            fontWeight: '500'
+          }}>
+            <span style={{ fontSize: '1em' }}>💡</span>Utdanning innen sosialt arbeid
+          </h3>
+          <p style={{ 
+            lineHeight: '1.8',
+            color: '#555',
+            fontSize: '0.95em'
+          }}>
+            Før jeg startet på IT-studiene, tok jeg en bachelorgrad i sosialt arbeid og jobbet flere år som sosionom. 
+            Denne erfaringen har gitt meg verdifull innsikt i menneskelig kommunikasjon, behovsforståelse og tverrfaglig samarbeid – 
+            egenskaper jeg i dag ser som en stor styrke også i utviklerrollen. Det å kunne sette seg inn i andres perspektiv, 
+            jobbe strukturert under press, og kommunisere tydelig på tvers av fagmiljøer er noe jeg tar med meg videre i alle prosjekter jeg jobber med.
+          </p>
+        </div>
       </div>
     </motion.div>
   )
